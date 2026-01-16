@@ -1,0 +1,87 @@
+/* Base Styles */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section Background */
+.bg-hero {
+    background-color: #111827;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control {
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Reviews Carousel Styles */
+.reviews-carousel {
+    position: relative;
+}
+
+.reviews-carousel-inner {
+    transition: transform 0.5s ease;
+}
+
+.reviews-carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.reviews-carousel-item.active {
+    display: block;
+}
+
+.reviews-carousel-control {
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.reviews-carousel-control:hover {
+    background-color: rgba(234, 88, 12, 0.8) !important;
+}
+
+/* Custom Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
